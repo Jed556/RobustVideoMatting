@@ -132,7 +132,6 @@ All models are available in [Google Drive](https://drive.google.com/drive/folder
 <br>
 
 ## Examples
-
 <details open>
   <summary><h3>Anaconda Prompt Example</h3></summary>
 
@@ -141,6 +140,7 @@ All models are available in [Google Drive](https://drive.google.com/drive/folder
 - Clone repository to your machine
 
 2. Setup Environment
+
 **Launch Anaconda Prompt** and enter the following commands:
 ```sh
 conda create -n RVM
@@ -150,7 +150,6 @@ cd "path/to/cloned/repository"
 pip install --force-reinstall -r requirements_inference_v2.txt
 ```
 You may change RVM to any env name you like. Additionally, you may also input `pip install --force-reinstal av pims tqdm==4.61.1` to pip install the required packages.
-
 </details>
 
 <details>
