@@ -131,7 +131,30 @@ All models are available in [Google Drive](https://drive.google.com/drive/folder
 
 <br>
 
-## PyTorch Example
+## Examples
+
+<details open>
+  <summary><h3>Anaconda Prompt Example</h3></summary>
+
+1. Installation:
+- Install [**Anaconda**](https://www.anaconda.com) and **Anaconda Prompt**<br>
+- Clone repository to your machine
+
+2. Setup Environment
+**Launch Anaconda Prompt** and enter the following commands:
+```sh
+conda create -n RVM
+conda activate RVM
+conda install pytorch torchvision torchaudio pytorch-cuda=11.7 -c pytorch -c nvidia
+cd "path/to/cloned/repository"
+pip install --force-reinstall -r requirements_inference_v2.txt
+```
+You may change RVM to any env name you like. Additionally, you may also input `pip install --force-reinstal av pims tqdm==4.61.1` to pip install the required packages.
+
+</details>
+
+<details>
+  <summary><h3>PyTorch Example</h3></summary>
 
 1. Install dependencies:
 ```sh
@@ -197,6 +220,7 @@ convert_video = torch.hub.load("PeterL1n/RobustVideoMatting", "converter")
 ```
 
 Please see [inference documentation](documentation/inference.md) for details on `downsample_ratio` hyperparameter, more converter arguments, and more advanced usage.
+</details>
 
 <br>
 
@@ -239,3 +263,5 @@ Speed is measured with `inference_speed_test.py` for reference.
 * [MNN C++ Demo](https://github.com/DefTruth/lite.ai.toolkit/blob/main/lite/mnn/cv/mnn_rvm.cpp) ([@DefTruth](https://github.com/DefTruth))
 * [TNN C++ Demo](https://github.com/DefTruth/lite.ai.toolkit/blob/main/lite/tnn/cv/tnn_rvm.cpp) ([@DefTruth](https://github.com/DefTruth))
 
+## Modifications
+Modified by [**Jed556**](https://github.com/Jed556) for Anaconda Prompt use
