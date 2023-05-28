@@ -150,6 +150,12 @@ cd "path/to/cloned/repository"
 pip install --force-reinstall -r requirements_inference_v2.txt
 ```
 You may change RVM to any env name you like. Additionally, you may also input `pip install --force-reinstal av pims tqdm==4.61.1` to pip install the required packages.
+
+3. Run command
+```sh
+python inference.py --variant resnet50 --checkpoint checkpoint/rvm_resnet50.pth --device cuda --input-source input/input.mp4 --output-type video --output-composition output/comp.mp4 --output-alpha output/alpha.mp4 --output-foreground output/fg.mp4 --output-video-mbps 10 --seq-chunk 1
+```
+Please see [inference documentation](documentation/inference.md) for details on invoking through command line.
 </details>
 
 <details>
