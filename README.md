@@ -149,7 +149,7 @@ conda install pytorch torchvision torchaudio pytorch-cuda=11.7 -c pytorch -c nvi
 cd "path/to/cloned/repository"
 pip install --force-reinstall -r requirements_inference_v2.txt
 ```
-You may change RVM to any env name you like. Additionally, you may also input `pip install --force-reinstal av pims tqdm==4.61.1` to pip install the required packages.
+You may change RVM to any env name you like. Additionally, you may also input `pip install --force-reinstall av pims tqdm==4.61.1` to pip install the required packages.
 
 3. Run command
 ```sh
